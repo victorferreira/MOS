@@ -161,7 +161,7 @@ void mos_loop(void)
     int status;
 
     do {
-        printf("> ");
+        printf("MOS> ");
         line = mos_read_line();
         args = mos_split_line(line);
         status = mos_execute(args);
