@@ -44,7 +44,7 @@ int mos_cd(char **args)
     fprintf(stderr, "mos: expected argument to \"cd\"\n");
   } else {
     if (chdir(args[1]) != 0) {
-      perror("lsh");
+      perror("mos");
     }
   }
   return 1;
